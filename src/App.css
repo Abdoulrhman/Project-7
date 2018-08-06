@@ -1,0 +1,184 @@
+
+html,
+body,
+#root,
+.containerApp,
+.containerMap {
+  height: 100%;
+  font-family: Arial;
+  margin: 0;
+  
+}
+
+
+.title {
+  
+  text-align: center;
+  font-weight:100 ;
+  color: #fff;
+  font-size: 15px;
+}
+
+.header {
+  position: fixed;
+  width: 280px;
+  background:rgb(59, 146, 212);
+  border-radius: 5px ;
+}
+.header img{
+  margin-left: 120px;
+}
+
+.loc {
+  list-style: none;
+  padding: 0;
+}
+
+.Loc_list {
+  width: 280px;
+  height: calc(100% - 120px);
+  position: fixed;
+  background:rgb(59, 146, 212);
+  z-index: 1;
+  margin-top: 118px;
+  overflow-y: auto;
+}
+
+
+.Loc_info{
+text-align: center;
+color:#424242
+}
+
+
+.one {
+  padding: 10px 15px;
+  color: rgb(255, 255, 255);
+}
+
+.one:hover {
+  background-color: rgb(30, 0, 44);
+  color: rgb(123, 161, 211);
+}
+
+.Navbar {
+  position: fixed;
+  left: -265px;
+  transition: 2s ease-in-out;
+
+  z-index: 1;
+}
+.Navbar:hover{
+  left: 0px;
+  transition: 2s ease-in-out;
+}
+
+.box {
+  width: 270px;
+  height: 35px;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px;
+  
+}
+
+.Show{
+
+  bottom: 10px;
+  width: 200px;
+  height: auto;
+  padding: 15px;
+  background: #3b92d4;
+  opacity: 0.7;
+  border: solid;
+  border-radius: 5%;
+  
+ 
+}
+
+.Exit_display {
+  top: 0;
+  padding: 10px;
+  font-size: 15px;
+  color: rgb(173, 20, 20)
+ 
+}
+
+.Exit_display,
+.Show{
+   position: absolute;
+    right: 0;
+    
+}
+
+.Add,
+.Exit_display,
+.Set {
+  margin: 0;
+}
+
+
+.Set
+{
+  color: rgb(255, 255, 255);
+  margin-bottom: 11px;
+}
+
+.Exit_display,
+.one
+{
+  cursor: pointer;
+}
+.Loc_name {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+}
+
+
+.err {
+  bottom: 0;
+  left: 70%;
+  padding: 16px 39px;
+  background: #000;
+  color: #fff;
+  }
+
+
+  /*===============Media query===============*/
+  @media screen and (max-width: 500px) {
+
+    .Loc_list{
+      width:150px;
+    }
+    .header {
+      width:150px;
+    }
+
+    .box {
+      width: 150px;
+    }
+
+    .containerMap{
+
+      margin: 0%;
+      padding-left: 150px;
+      
+
+    
+      }
+
+      .Show{
+        font-size: 55%;
+        width: 70px;
+      }
+
+      .Exit_display{
+        font-size: 10px;
+        padding: 35px;
+      }
+
+
+  }
+
